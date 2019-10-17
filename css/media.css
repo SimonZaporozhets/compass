@@ -1,0 +1,220 @@
+/* 992px - 1200px */
+@media screen  and (max-width: 1199px) {
+    .header-list {
+        margin-left: 30px;
+    }
+    .vk-link {
+         margin-left: 0px; 
+    }
+    .header-title {
+        letter-spacing: 1.15rem;
+    }
+}
+
+/* 768px - 992px */
+@media screen  and (max-width: 991px) {
+    .header-list {
+        display: none;
+    }
+    .competence {
+        margin-top: 30px;
+    }
+    .main-question {
+        width: 90%;
+    }
+    .client-arrow {
+        display: none;
+    }
+    .client-wrapper-top {
+        display: inline-block;
+    }
+    .client-name {
+        display: inline-block;
+    }
+    .vk-link {
+        margin-left: 25px; 
+    }
+    .city-move {
+        margin-top: 10px;
+    }
+    .client-info {
+        margin-top: 10px;
+    }
+    .contact-footer {
+        display: none;
+    }
+    .header-title {
+        font-size: 2.93rem;
+    }
+    .header-title span {
+        font-size: 4.26rem;
+    }
+    .form-smaller {
+        padding: 25px 20px;
+    }
+    .contact-wrapper {
+        padding: 40px 30px;
+    }
+    .move-wrapper {
+        background: #fff; 
+        margin: 0px auto; 
+        width: 100%; 
+        box-shadow: none; 
+        padding: 40px 0px 65px 0px; 
+    }
+    .main-move {
+        background: #fff;
+        padding-bottom: 0px;
+    }
+    .move-par {
+        padding: 0px 15px;
+    }
+    .house-move {
+        width: 340px;
+    }
+    .about {
+        background: #fff;
+        padding-bottom: 0px;
+    }
+    .about-wrapper {
+        margin: 0 auto;
+        width: 100%;
+        box-shadow: none;
+    }
+    .new-house {
+        letter-spacing: 0em; 
+    }
+    .burger-menu {
+        display: block;
+        right: 20px;
+    }
+    .contacts {
+        margin-right: 40px;
+    }
+    .header-list-burger {
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+/* 576px - 768px */
+@media screen  and (max-width: 767px) {
+    .header-title {
+        font-size: 2.2rem;
+    }
+    .header-title span {
+        font-size: 3.13rem;
+        display: block;
+    }
+        .competence {
+         margin-top: 0px; 
+    }
+    .adv-item {
+        margin-bottom: 15px;
+    }
+    .dream {
+        width: 90%;
+    }
+    .client-img {
+        position: relative;
+        margin: 0px auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .client-wrapper {
+        padding: 40px 40px 40px 40px;
+        text-align: center;
+    }
+    .client-name {
+        display: block;
+    }
+    .vk-link {
+       margin: 10px 0px 0px 0px;
+        display: block
+    }
+    .city-move {
+        margin-top: 5px;
+    }
+    .par-politic {
+        display: none;
+    }
+    .footer-par {
+        text-align: right;
+    }
+    .contact-wrapper {
+        margin: 0 auto;
+        box-shadow: none;
+        width: 100%;
+        padding: 50px 0px 0px 0px;
+    }
+    .main-contacts {
+        padding-bottom: 60px;
+        background: #fff;
+    }
+    .contacts-ways {
+        margin-top: 70px;
+        padding-left: 25%;
+    }
+    .package {
+        width: 240px;
+    }
+    .house-move {
+        width: 240px;
+    }
+    .viktor-info {
+        margin-top: 20px;
+    }
+    .client-arrow {
+        display: none !important;
+    }
+    .client-wrapper-top {
+        margin: 0 auto;
+    }
+    .client-info {
+        margin: 10px auto 0px auto;
+    }
+}
+
+/* 320px - 576px */
+@media screen  and (max-width: 575px) {
+    .header-title {
+        font-size: 1.9rem;
+    }
+    .header-title span {
+        font-size: 2.9rem;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .contacts {
+        display: none;
+    }
+    .second-title {
+        font-size: 2rem;
+    }
+    .house-dream {
+        padding: 40px 20px;
+    }
+    .footer-par {
+        display: none;
+    }
+    .circle-first, .circle-third {
+        display: none;
+    }
+    .header-title {
+        letter-spacing: 7px;
+        font-size: 1.6rem;
+    }
+    .move-par {
+        padding: 0px 0px;
+    }
+    .house-move {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .client-arrow {
+        display: none !important;
+    }
+    .popup-form {
+        width: 300px;
+    }
+}

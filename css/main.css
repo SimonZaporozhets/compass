@@ -1,0 +1,929 @@
+/* Спецификация */
+html {
+	font-size: 15px;
+}
+
+body {
+	color: #fff;
+	overflow-x: hidden;
+}
+
+ul, li {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+input,button {
+	-moz-transition: all 0.3s ease;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease;
+}
+
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus,
+input:focus, input:active {
+	text-decoration: none;
+	outline: none;
+}
+
+.container {
+	position: relative;
+}
+
+.btn-more {
+	border: 2px solid white;
+	border-radius: 5px;
+	text-transform: uppercase;
+	display: block;
+	width: 210px;
+	padding: 20px 30px;
+    color: white;
+    margin: 0px auto;
+    font-family: 'MuseoSansCyrl-900';
+    -moz-transition: all 0.3s ease;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease;
+}
+
+.btn-more:hover {
+	background: #fff;
+	color: #64a8df;
+}
+
+.btn-more:active {
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.3) inset;
+}
+
+/*---------------------------Shapka-------------------*/
+header {
+    position: relative;
+    background: url(../img/header-bg.png) no-repeat center top;
+    background-size: cover;
+}
+.layer {
+    background: rgba(46,81,111,0.69);
+    background: -moz-linear-gradient(-45deg, rgba(46,81,111,0.69) 0%, rgba(0,0,0,0.69) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(46,81,111,0.69)), color-stop(100%, rgba(0,0,0,0.69)));
+    background: -webkit-linear-gradient(-45deg, rgba(46,81,111,0.69) 0%, rgba(0,0,0,0.69) 100%);
+    background: -o-linear-gradient(-45deg, rgba(46,81,111,0.69) 0%, rgba(0,0,0,0.69) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(46,81,111,0.69) 0%, rgba(0,0,0,0.69) 100%);
+    background: linear-gradient(135deg, rgba(46,81,111,0.69) 0%, rgba(0,0,0,0.69) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e516f', endColorstr='#000000', GradientType=1 );
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.header {
+    background: rgb(0,0,0,0.25);
+}
+.header-list {
+    display: flex;
+    padding: 21px 0px;
+    font-size: 0.73rem;
+    font-family: 'MuseoSansCyrl-900';
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+.list-item {
+}
+.header-list li a {
+    color: #fff;
+    display: block;
+    padding: 10px 10px;
+}
+.header-list li:hover {
+    background: rgb(0,0,0,0.14);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contacts {
+    font-size: 1.06rem;
+    font-family: 'MuseoSansCyrl-900';
+    display: flex;
+    align-items: center;
+    float: right;
+    padding: 16px 0px;
+    color: #64a8df;
+}
+.numbers-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.contacts i {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: 2px dashed #64a8df;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 27px;
+    margin-right: 10px;
+}
+/*menu-burger*/
+.header-list-burger {
+    position: absolute;
+    right: 20px;
+    top: 77px;
+    background: rgba(0, 0, 0, 0.7803921568627451);
+    padding: 20px;
+    text-align: right;
+    display: inline-block;
+    z-index: 99999999;
+    background-color: #64a8df;
+    border-radius: 5px;
+}
+.list-item-burger {
+    padding: 5px 5px;
+}
+.list-item-burger:hover {
+    background-color: #428cc7;
+}
+.nav-burger {
+    display: none;
+}
+.burger-menu {
+    display: none;
+    position: absolute;
+    line-height: 77px;
+    font-size: 25px;
+    cursor: pointer;
+    right: 0;
+    color: #64a8df;
+}
+/*-------------------- bulgaria---------------------*/
+.bulgaria {
+    padding: 205px 0px 100px 0px;
+    text-align: center;
+}
+.header-title {
+    font-size: 3.4rem;
+    font-family: 'MuseoSansCyrl-900';
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+}
+.header-title span {
+    font-size: 6rem;
+}
+.arrow {
+    margin: 140px auto 0px auto;
+    width: 45px;
+    height: 45px;
+    border: 2px dashed #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+}
+/*-----------------------advantages-------------------*/
+.advantages {
+    color: #000;
+    text-align: center;
+    padding: 90px 0px 100px 0px;
+}
+.adv-title {
+    margin-bottom: 70px;
+}
+.second-title {
+    font-size: 2.8rem;
+    font-family: 'MuseoSansCyrl-900';
+	text-transform: uppercase;
+    letter-spacing: 0.075em;
+    text-align: center;
+}
+.adv-item {
+    padding: 55px 25px 0px 25px;
+    background: #f4f4f4;
+    height: 360px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.33);
+}
+.third-title {
+    font-size: 1.33rem;
+    font-family: 'MuseoSansCyrl-900';
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    letter-spacing: 0.075em;
+}
+.adv-par {
+    font-size: 1.13rem;
+    font-family: 'MuseoSansCyrl-100';
+}
+.adv-par::before {
+    content: '';
+    display: block;
+    background: #c6c6c6;
+    width: 35px;
+    height: 1px;
+    margin: 0px auto 20px auto;
+}
+.adv-img {
+    height: 105px;
+}
+.help {
+    background: url(../img/help.png) no-repeat center top;
+}
+.document {
+    background: url(../img/document.png) no-repeat center top;
+}
+.people {
+    background: url(../img/people.png) no-repeat center top;
+}
+/*-----------------------moving-----------------------*/
+.moving {
+    background: url(../img/sand-bg.png) no-repeat center top ;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    padding: 90px 0px 100px 0px;
+    letter-spacing: 0.1em;
+}
+.moving-layer {
+    background: rgb(31,46,66,0.89);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.quote {
+    font-size: 1.2rem;
+    font-family: 'MuseoSansCyrl-100Italic';
+    margin: 20px 0px 30px 0px;
+}
+.author {
+    font-family: 'MuseoSansCyrl-900';
+    text-transform: uppercase;
+    line-height: 45px;
+}
+.main-question {
+    font-size: 1.26rem;
+    text-transform: uppercase;
+    font-family: 'MuseoSansCyrl-100';
+    border: 1px dashed white;
+    margin: 0px auto;
+    width: 70%;
+    padding: 55px 0px;
+    letter-spacing: 0.15em;
+}
+.main-question span {
+    font-size: 1.53rem;
+    font-family: 'MuseoSansCyrl-900';   
+}
+.arrow-down {
+    width: 31px;
+    height: 31px;
+    border: 1px dashed #fff;
+    border-radius: 50%;
+    line-height: 31px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #2c3947;
+}
+.arrow-top {
+    top: -15.5px;
+}
+.arrow-bottom {
+    bottom: -15.5px;
+}
+.answer {
+    font-size: 1.2rem;
+    font-family: 'MuseoSansCyrl-100';
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.answer span {
+    font-size: 2.46rem;
+}
+/*-------------------------property-------------------*/
+
+.property {
+    color: #000;
+    padding: 105px 0px 95px 0px;
+    text-align: center;
+    background: url(../img/town-bg.png) no-repeat center bottom;
+}
+.dream-title {
+    padding-bottom: 0px;
+    letter-spacing: 0em;
+    margin-bottom: 15px;
+}
+.dream {
+    margin: 150px auto 0px auto;
+    width: 70%;
+    position: relative;
+    z-index: 3;
+}
+.house-dream {
+    padding: 65px 60px 40px 60px;
+    background: #f4f4f4;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+}
+.dream p {
+    font-size: 1.13rem;
+    font-family: 'MuseoSansCyrl-100';
+}
+.transport {
+    padding: 40px 25px;
+    background: #f4f4f4;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-top: 5px;
+}
+.btn-blue {
+    margin-top: 60px;
+    border-color: #64a8df;
+    color: #64a8df;
+}
+.btn-blue:hover {
+	background: #64a8df;
+	color: #fff;
+}
+
+.btn-blue:active {
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.3) inset;
+}
+.dream-circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.circle-first {
+    top: -67.5px;
+    left: -220px;
+    z-index: -1;
+}
+.circle-second {
+   top: -130px;
+    z-index: 2;
+}
+.circle-third {
+    top: -60px;
+    right: -150px;
+    z-index: -1;
+}
+.lifering {
+    font-size: 1.73rem;
+    color: #fff;
+    background: #64a8df;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    bottom: -30px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+}
+/*------------------------reviews---------------------*/
+.reviews {
+    color: #000;
+    padding: 80px 0px;
+}
+.client-wrapper {
+    box-shadow: none;
+    width: 100%;
+    padding: 40px 40px 45px 130px;
+    letter-spacing: 0.06em;
+    position: relative;
+    outline: none;
+}
+.client-wrapper:active {
+    border: none;
+}
+.reviews-title {
+    margin-bottom: 60px;
+}
+.client-arrow {
+    font-size: 3rem;
+    color: #64a8df;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    line-height: 210px;
+}
+.client-wrapper-top {
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.client-name {
+    font-size: 1.06rem;
+    font-family: 'MuseoSansCyrl-900';
+}
+.vk-link {
+    font-size: 0.8rem;
+    font-family: 'MuseoSansCyrl-900';
+    color: #64a8df;
+    text-decoration: underline;
+    margin-left: -20%;
+}
+.city-move {
+    font-size: 0.8rem;
+    font-family: 'MuseoSansCyrl-100';
+    color: #64a8df;
+}
+.city-move i {
+    font-size: 0.5rem;
+    margin: 0px 5px;
+}
+.client-info {
+    margin-top: 25px;
+    font-size: 0.93rem;
+    font-family: 'MuseoSansCyrl-100Italic';
+    margin-left: 30px;
+}
+.client-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0px auto 15px;
+    left: 0px;
+}
+.slick-dots li button {
+    width: 20px;
+    height: 20px;
+    border: 1px dashed #64a8df;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slick-dots li.slick-active button {
+    background: #64a8df;
+    border: 0;
+    cursor: pointer;
+}
+/*----------------------consultation------------------*/
+.consultation {
+    background: #65b1f2 url(../img/blue-bg.png) no-repeat center;
+    padding: 80px 0px 85px 0px;
+    background-size: cover;
+    text-align: center;
+}
+.consult-free {
+    font-size: 1.4rem;
+    font-family: 'MuseoSansCyrl-100';
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.arrow-consult {
+    background: none;
+    position: relative;
+    top: 0;
+    margin: 30px auto;
+}
+.consult-form {
+    margin: 0px auto;
+    max-width: 367px;
+    width: 90%;
+}
+.form-input {
+    width: 100%;
+    background: #73c1fd;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 20px 0px 20px 30px;
+    margin-bottom: 10px;
+    font-family: 'MuseoSansCyrl-300';
+    font-size: 0.8666666666666667rem;
+}
+.form-input::placeholder {
+    color: #c2e4fe;
+    text-transform: uppercase;
+}
+.form-input:focus::placeholder {
+    color: white;
+}
+.form-input:focus {
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.30);
+}
+.form-but {
+    width: 100%;
+    padding: 20px 0px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'MuseoSansCyrl-900';
+    -moz-transition: all 0.3s ease;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease;
+}
+.form-but:hover {
+    color: #73c1fd;
+    background: #fff;
+}
+.form-but:active {
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.26) inset;
+}
+/*---------------------footer--------------------*/
+.footer {
+    padding: 10px 0px;
+    background: #23aae2;
+    box-shadow: 3px -13px 131px 0px rgba(0, 0, 0, 0.30);
+}
+.contact-footer {
+    color: #fff;
+    padding: 5px 0px;
+}
+.contact-footer i {
+    border: 2px dashed white;
+}
+.footer-par {
+    line-height: 58px;
+    font-size: 0.86rem;
+    font-family: 'MuseoSansCyrl-100';
+}
+.par-politic {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.header-title-contact {
+    letter-spacing: 0.2em;
+}
+.bulgaria-contact {
+    padding: 70px 0px 130px 0px;
+}
+.arrow-contact {
+    margin-top: 35px;
+}
+/*-------------------------CONTACTS------------*/
+.contact-single {
+    padding: 22px 0px;
+}
+.contact-single .contact {
+    color: #fff;
+    border-bottom: 1px dotted white;
+}
+.main-contacts {
+    padding-bottom: 80px;
+    background: #f7f7f7;
+}
+.contact-wrapper {
+    background: #fff;
+    margin: -85px auto 0px auto;
+    width: 90%;
+    color: #000;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.18); 
+    padding: 50px 100px;
+}
+.main-contact-par {
+    font-size: 1.13rem;
+    font-family: 'MuseoSansCyrl-100';
+    text-align: center;
+}
+.contacts-intro {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-smaller {
+    width: 100%;
+    background: #65b1f2;
+    color: #fff;
+    border-radius: 3px;
+    padding: 40px 30px;
+    margin-top: 50px;
+}
+.title-ask {
+    font-size: 1.2rem;
+}
+.ask {
+    font-size: 1.33rem;
+}
+.consult-free-contact {
+    font-size: 1.13rem;
+    text-align: center;
+    margin: 15px 0px 25px 0px;
+}
+.form-input-contact {
+    width: 290px;
+}
+.consult-form-contact {
+    width: 85%;
+    margin: 0px auto;
+}
+.form-but-contact {
+    margin-top: 15px;
+}
+.contact-way-title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'MuseoSansCyrl-900';
+}
+.contact-way-info {
+    font-size: 1.06rem;
+    font-family: 'MuseoSansCyrl-100';
+    margin-top:  15px;
+}
+.contact-way {
+    margin-bottom: 45px;
+    padding-left: 60px;
+}
+.contacts-ways {
+    margin-top: 130px;
+}
+
+.contact-list li:first-child {
+    background: url(../img/cell-phone.png) no-repeat left top;
+}
+.contact-list li:nth-child(2) {
+    background: url(../img/Email.png) no-repeat left top;
+}
+.contact-list li:last-child {
+    background: url(../img/Skype.png) no-repeat left top;
+}
+/*----------------------MOVE------------------------*/
+
+.move-title {
+    letter-spacing: 0.2em;
+}
+.move-header {
+    padding: 70px 0px 110px 0px;
+}
+.main-move {
+    background: #f7f7f7;
+    padding-bottom: 85px;
+}
+.move-arrow {
+    margin-top: 70px;
+}
+
+.move-wrapper {
+    background: #fff;
+    margin: -85px auto 0px auto;
+    width: 90%;
+    color: #000;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.18); 
+    padding: 40px 50px 65px 50px;
+}
+.contact-move {
+    border-bottom: 1px dotted white;
+}
+.contacts-move {
+    margin: 7px 0px;
+}
+.move-par {
+    font-size: 1.13rem;
+    font-family: 'MuseoSansCyrl-100';
+    text-align: center;
+}
+.move-par span {
+    font-family: 'MuseoSansCyrl-900';
+}
+.house-move {
+    margin-top: 55px;
+    margin-bottom: 100px;
+}
+.best-life {
+    margin-top: 85px;
+    margin-bottom: 50px;
+}
+.package {
+    margin: 0px auto;
+    display: block;
+}
+.par-lug-pac {
+    font-size: 1.06rem;
+    font-family: 'MuseoSansCyrl-100';
+    letter-spacing: 0.05em;
+}
+/*---------------------ABOUT-----------------------*/
+.about-arrow {
+    margin-top: 40px;
+}
+.about-header {
+    padding: 80px 0px 120px 0px;
+}
+.about {
+    background: #f7f7f7;
+    padding-bottom: 85px;
+}
+.about-wrapper {
+    background: #fff;
+    margin: -85px auto 0px auto;
+    width: 90%;
+    color: #000;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.18);
+    padding: 50px 0px 70px 0px;
+    text-align: center;
+}
+.reliability {
+    font-size: 1.2rem;
+    font-family: 'MuseoSansCyrl-100';
+    margin-bottom: 50px;
+}
+.reliability span {
+    font-family: 'MuseoSansCyrl-900';
+}
+.tens-clients {
+    font-family: 'MuseoSansCyrl-900';
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.tens-clients span {
+    font-size: 2.6rem;
+    color: #64a9df;
+}
+.bought {
+    font-size: 1.26rem;
+    font-family: 'MuseoSansCyrl-100';
+    line-height: 74px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.new-house {
+    font-size: 2.01rem;
+    text-transform: uppercase;
+    font-family: 'MuseoSansCyrl-900';
+    letter-spacing: 0.1em;
+}
+.new-house span {
+    color: #64a9df;
+}
+.readiness {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: 'MuseoSansCyrl-900';
+    background: #64a8df;
+    font-size: 1.53rem;
+    color: #fff;
+    padding: 25px 0px;
+}
+.partner-title {
+    text-transform: uppercase;
+    font-family: 'MuseoSansCyrl-900';
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+}
+.partner-name {
+    font-size: 1.4rem;
+    font-family: 'MuseoSansCyrl-900';
+    letter-spacing: 0.1em;
+}
+.partner-par {
+    font-size: 1.06rem;
+    font-family: 'MuseoSansCyrl-100';
+    text-align: justify;
+    margin-top: 20px;
+}
+.partner-info {
+    padding: 35px 30px 40px 30px;
+    background: #f4f4f4;
+    border-radius: 3px;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.33); 
+}
+.partner-img {
+    height: 160px;
+    width: 100%;
+    background: url(../img/igor.png) no-repeat center top;
+}
+.viktor-img {
+    background: url(../img/viktor.png) no-repeat center top;
+}
+.partner-par::before {
+    content: '';
+    display: block;
+    background: #c6c6c6;
+    width: 35px;
+    height: 1px;
+    margin: 0px auto 20px auto;
+}
+.viktor-info {
+    padding-bottom: 105px;
+}
+
+/*button for scrolling to top*/
+.scrollTop {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    right: 30px;
+    bottom: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 2em;
+    opacity: 0.7;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    z-index: 999999999;
+}
+.show {
+    display: block;
+}
+/*popup form*/
+.modalka {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+}
+.popup-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.86);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-form {
+    width: 400px;
+    border-radius: 5px;
+    position: relative;
+}
+.popup-call {
+    cursor: pointer;
+}
+.popup-close {
+    color: black;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+}
+.popup-close i {
+    font-size: 17px;
+}
+.form-smaller-popup {
+    margin-top: 0;
+}
+
+
+@font-face {
+  font-family: 'MuseoSansCyrl-100';
+  src: url('../fonts/MuseoSansCyrl-100.eot');
+  src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MuseoSansCyrl-100.svg#MuseoSansCyrl-100') format('svg'),
+       url('../fonts/MuseoSansCyrl-100.ttf') format('truetype'),
+       url('../fonts/MuseoSansCyrl-100.woff') format('woff'),
+       url('../fonts/MuseoSansCyrl-100.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl-900';
+  src: url('../fonts/MuseoSansCyrl-900.eot');
+  src: url('../fonts/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MuseoSansCyrl-900.svg#MuseoSansCyrl-900') format('svg'),
+       url('../fonts/MuseoSansCyrl-900.ttf') format('truetype'),
+       url('../fonts/MuseoSansCyrl-900.woff') format('woff'),
+       url('../fonts/MuseoSansCyrl-900.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl-300';
+  src: url('../fonts/MuseoSansCyrl-300.eot');
+  src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MuseoSansCyrl-300.svg#MuseoSansCyrl-300') format('svg'),
+       url('../fonts/MuseoSansCyrl-300.ttf') format('truetype'),
+       url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
+       url('../fonts/MuseoSansCyrl-300.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl-100Italic';
+  src: url('../fonts/MuseoSansCyrl-100Italic.eot');
+  src: url('../fonts/MuseoSansCyrl-100Italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MuseoSansCyrl-100Italic.svg#MuseoSansCyrl-100Italic') format('svg'),
+       url('../fonts/MuseoSansCyrl-100Italic.ttf') format('truetype'),
+       url('../fonts/MuseoSansCyrl-100Italic.woff') format('woff'),
+       url('../fonts/MuseoSansCyrl-100Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
